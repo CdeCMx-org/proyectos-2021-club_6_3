@@ -285,7 +285,7 @@
                       </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/HerramientasClass.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -365,9 +365,9 @@
                     <h3>Metodología</h3>
                   <p>Para la realización de este proyecto se utilizó un cuaderno de Jupyter en Google Colab que fácilmente puedes encontrarlo en el área de <a href="#faq" class="btn-get-started scrollto">anexos y bibliografía</a>. En este cuaderno, se cargaron los datos referentes al estudio del dataset escogido. Posteriormente, se analizaron variables de interés imprimiendo sus gráficas y supervisando su aleatoriedad.
                     <br><br>
-                    Posteriormente, se estudiaron los modelos con ayuda de la librería de sklearn. Primeramente, se generaron los valores de precisión para cada herramienta y posteriormente la impresión de matrices de confusión para observar su desempeño de una mejor manera. 
+                    Posteriormente, se estudiaron los modelos con ayuda de la librería de sklearn. Para ello, se divieron los datos en 80% y 20% para pasar a formar parte del training set y el testing set respectivamente. Primeramente, se generaron los valores de precisión para cada herramienta y posteriormente la impresión de matrices de confusión para observar su desempeño de una mejor manera. 
                     </p>
-                    <p> Los modelos de interés fueron KNeighbor, Decision Tree, Random Forest y Gaussian naive Bayes. </p>
+                    <p> Los modelos de interés fueron KNeighbor, Decision Tree, Random Forest y Gaussian naive Bayes. Todos los clasificadores se trabajaron con los parámetros dados en el club 6 de Clubes de Ciencia México 2021. </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/Metodología.jpg" alt="" class="img-fluid">
@@ -487,42 +487,8 @@
             </div>
           </div>
 
-          <!-- <div class="col-lg-3 col-md-4">
-            <div class="item-hover">
-              <a href="assets/img/Gráfica1.png" class="galelry-lightbox">
-                <img src="assets/img/Gráfica1.png" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="item-hover">
-              <a href="assets/img/Gráfica3.png" class="galelry-lightbox">
-                <img src="assets/img/Gráfica3.png" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="item-hover">
-              <a href="assets/img/Gráfica4.png" class="galelry-lightbox">
-                <img src="assets/img/Gráfica4.png" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="item-hover">
-              <a href="assets/img/Gráfica5.png" class="galelry-lightbox">
-                <img src="assets/img/Gráfica5.png" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="item-hover">
-              <a href="assets/img/Gráfica6.png" class="galelry-lightbox">
-                <img src="assets/img/Gráfica6.png" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div> -->
-      <p class="text-center">En estas gráficas podemos observar que la población seleccionada cumple con su cometido al tener valores diferentes sin presentar una tendencia clara.</p>
+    
+      <p class="text-center">Luego de observar el comportamiento de las diferentes variables se generó una gráfica de barras con los valores de precisión para cada clasificador obteniendo de esta manera los siguientes resultados:</p>
         <div class="col-lg-12 col-md-12 text-center align-self-center m-auto">
             <div class="item-hover">
               <a href="assets/img/precision.png" class="galelry-lightbox">
@@ -530,12 +496,20 @@
               </a>
             </div>
           </div>
-      <p class="text-center">En la anterior gráfica de barras, se puede observar que el algoritmo de bosques aleatorios (<b>Random Forest</b>) es el que obtuvo un mejor desempeño. Ahora, se generan las matrices de confusión
-          para observar el trabajo de cada herramienta.</p>     
+      <p class="text-center">En la anterior gráfica de barras, se puede observar que los clasificadores de bosques aleatorios (<b>Random Forest</b>) y <b>Naive Bayes</b> obtuvieron los mejores desempeños.
+        <br> <br>
+        Por último, se generaron las matrices de confusión para cada una de las técnicas obteniendo los siguientes resultados:</p>     
              <div class="col-md-6 col-12">
             <div class="item-hover text-center">
               <a href="assets/img/KNeighbors.png" class="galelry-lightbox">
                 <img src="assets/img/KNeighbors.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="item-hover text-center">
+              <a href="assets/img/DecisionTree.png" class="galelry-lightbox">
+                <img src="assets/img/DecisionTree.png" alt=""class="img-fluid">
               </a>
             </div>
           </div>
@@ -546,13 +520,7 @@
               </a>
             </div>
           </div>
-      <div class="col-md-6 col-12">
-            <div class="item-hover text-center">
-              <a href="assets/img/DecisionTree.png" class="galelry-lightbox">
-                <img src="assets/img/DecisionTree.png" alt=""class="img-fluid">
-              </a>
-            </div>
-          </div>
+ 
              <div class="col-md-6 col-12">
             <div class="item-hover text-center">
               <a href="assets/img/GaussianNB.png" class="galelry-lightbox">
@@ -561,11 +529,45 @@
             </div>
           </div>
         
-        
-        
+          <div class="container">
+            <br> <br>
+            <div class="section-title">
+              <h2>Conclusiones</h2>
+            </div>
+          </div>
+
         </div>
 
       </div>
+      <div class=" container col-md-6 col-122">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title"><b>Python, una herramienta iremplazable</b></h5>
+          <p class="card-text">La computación científica se hace cada vez más visible en jóvenes investigadores. No es por nada que Python ha resaltado de entre tantas herramientas para posicionarse como aquella 
+            que se debería aprender en formación temprana. En este proyecto, con ayuda de Python y Google Colab pudimos generar resultar relevantes para la investigación e incluso generar nuevas dudas desarrollando nuevos talentos y explorando nuevas fronteras. </p>
+        </div>
+      </div>
+    </div>
+    <div class=" container col-md-6 col-12">
+      <div class="card text-center">
+        <div class="card-body ">
+          <h5 class="card-title"><b>Modelos clasificadores</b></h5>
+          <p class="card-text">Los modelos clasificatorios mostraron excelentes resultados a la hora de dividir los datos lo cual nos proporciona nuevas herramientas basadas en machine learning para resolver problemas reales con código conocido. Las matrices de confusión resultaron una buena manera de observar su trabajo y ejemplificar su desempeño de una manera limpia y ordenada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container col-md-6 col-12">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title"><b>Inteligencia Artificial y salud</b></h5>
+        <p class="card-text">El estudio realizado presentan una nueva alternativa a procesos complejos. Se generaron resultados confiables con alto nivel de eficiencia lo que los hace perfectos para
+          problemas con una gran cantidad de datos. Es necesario hoy en día aprender de otras áreas que muchas veces creemos no podrían ser complementarias.
+        </p>
+      </div>
+    </div>
+  </div>
     </section><!-- End Gallery Section -->
 
   
@@ -668,7 +670,7 @@
                 <p>
                   En el siguiente podrás encontrar un cuaderno en Google Colab con el código en Python utilizado en el estudio.
                 </p>
-                    <a href="https://colab.research.google.com/drive/1GaMCbzg4yC8npsPGcacbEr44PTeWgsdN?usp=sharing">Go to Colab</a>
+                    <a href="https://colab.research.google.com/drive/1GnzVhO6mXhYQaG3ecCP8lLoXtezkzGFp?usp=sharing">Go to Colab</a>
               </div>
             </li>
 
@@ -676,15 +678,28 @@
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Bibliografía<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                 La Inteligencia Artificial Mejorará La Experiencia De Los Pacientes Crónicos. January 31, 2020,  
+                 
+                  Avila-Tomás, J. F., Mayer-Pujadas, M. A., & Quesada-Varela, V. J. (2020)<em>La inteligencia artificial y sus aplicaciones en medicina I: introducción antecedentes a la IA y robótica. </em>  From
+                  <a href="https://www.elsevier.es/es-revista-atencion-primaria-27-avance-resumen-la-inteligencia-artificial-sus-aplicaciones-S0212656720301451">Link</a> 
+
+                  Center for Disease Control and Prevention <em>About Heart Disease</em>. (2020). From
+                  <a href="https://www.cdc.gov/heartdisease/about.htm">Link</a> 
+                  Martinez Heras, J. (2020). <em>¿Clasificación o Regresión?</em> IArtificail.net. From 
+                  <a href="https://www.iartificial.net/clasificacion-o-regresion/#Aclaraciones">Link</a>
+                <em>La Inteligencia Artificial Mejorará La Experiencia De Los Pacientes Crónicos</em>(2020). From 
                   <a href="https://www.adherencia-cronicidad-pacientes.com/cronicidad/la-inteligencia-artificial-mejorara-la-experiencia-de-los-pacientes-cronicos/">Link</a>
-                  
-                SISON, G. (2020, May 09). This is how heart disease impacts Americans. Retrieved May 30, 2020, from 
-                  https://www.singlecare.com/blog/news/heart-disease-statistics/
+                  Santa María E. (2018) em>BISEPRO: inteligencia artificial para agilizar el diagnóstico de la sepsis. </em>  From
+                  <a href="https://isanidad.com/126725/bisepro-inteligencia-artificial-para-agilizar-el-diagnostico-de-la-sepsis/">Link</a> 
+                  Sierra. C(2019)<em>El impacto de la inteligencia artificial en nuestra sociedad. Retos y oportunidades</em>. Consejo Superior de Investigaciones Científicas. From
+                    <a href="https://www.cdc.gov/heartdisease/about.htm">Link</a> 
+                  <em>SISON, G. (2020). This is how heart disease impacts Americans</em> From 
+                  <a href="https://www.singlecare.com/blog/news/heart-disease-statistics/">Link</a>
+                  Redacción España (2019) <em>Origen del concepto de Inteligencia Artificial.</em> From
+                  <a href="https://agenciab12.mx/noticia/origen-concepto-inteligencia-artificial">Link</a>                  
+                  <em>Understand Your Risks to Prevent a Heart Attack.</em> (2016). From
                 <a href="https://www.singlecare.com/blog/news/heart-disease-statistics/">Link</a>
-                 About Heart Disease. (2020, March 20). Retrieved May 30, 2020, from https://www.cdc.gov/heartdisease/about.htm
-                  <a href="https://www.cdc.gov/heartdisease/about.htm">Link</a>
-                Understand Your Risks to Prevent a Heart Attack. (2016). Retrieved May 30, 2020, from 
+                 
+                Understand Your Risks to Prevent a Heart Attack. (2016). Retrieved May 30, 2020. From 
                   
                     <a href="https://www.heart.org/en/health-topics/heart-attack/understand-your-risks-to-prevent-a-heart-attack">Link</a>
                 </p>
